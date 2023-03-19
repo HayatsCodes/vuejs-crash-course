@@ -47,7 +47,7 @@
     </nav>
 
     <div id="content" class="ml-14">
-        <h1 class="text-3xl font-bold">{{ pageTitle }}</h1>
+        <h1 v-for="(page, index)" class="text-3xl font-bold">{{ pageTitle }}</h1>
         <p> {{ content }} </p>
     </div>
 
