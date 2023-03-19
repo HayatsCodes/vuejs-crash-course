@@ -31,7 +31,7 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow">
-                <a v-for="(Link, index) in Links" :href="Link.url" :key="index"
+                <a v-for="(page, index) in pages" :href="Link.url" :key="index"
                     class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                     {{ Link.text }}
                 </a>
@@ -70,16 +70,9 @@
                         {
                             link: {text: 'Contact', url: 'contact.html'},
                             pageTitle: 'Contact Page',
-                            content: 
+                            content: 'This is the contact content',
                         }
                     ]
-                    // Links: [
-                    //     {text: 'Home', url: 'index.html'},
-                    //     {text: 'About', url: 'about.html'},
-                    //     {text: 'Contact', url: 'contact.html'},
-                    // ],
-                    // pageTitle: 'Hello, Vue',
-                    // content: 'Welcome to the Wonderful world of Vue.',
                 };
             }
         }).mount('body');
