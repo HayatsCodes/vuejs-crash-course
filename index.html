@@ -56,24 +56,16 @@
         Vue.createApp({
             data() {
                 return {
-                    
-                };
-            }
-        }).mount('nav');
-
-        Vue.createApp({
-            data() {
-                return {
                     Links: [
                         {text: 'Home', url: 'index.html'},
                         {text: 'About', url: 'about.html'},
                         {text: 'Contact', url: 'contact.html'},
-                    ]
+                    ],
                     pageTitle: 'Hello, Vue',
                     content: 'Welcome to the Wonderful world of Vue.',
                 };
             }
-        }).mount('#content');
+        }).mount('body');
     </script>
 </body>
 
