@@ -11,7 +11,7 @@
 <body>
     <div id="content" class="ml-10">
         <h1 class="text-3xl font-bold">{{ pageTitle }}</h1>
-        <p>Welcome to the Wonderful world of Vue.</p>
+        <p> {{ content }} </p>
     </div>
     
 
@@ -20,6 +20,7 @@
             data() {
                 return {
                     pageTitle: 'Hello, Vue',
+                    content: 'Welcome to the Wonderful world of Vue.',
                 };
             }
         }).mount('#content');
